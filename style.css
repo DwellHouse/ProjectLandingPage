@@ -1,17 +1,41 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
 }
 
 .header, .hero {
     color: #F9FAF8;
     background-color: #1F2937;
+    display: flex;
+    padding-left: 100px;
+    padding-right: 100px;
+    justify-content: space-between;
 }
 
 .header {
     font-size: 24px;
     font-weight: bolder;
+    
+}
+.leftLinks, .rightLinks {
+    width: 400px;
+}
+ul, .heroText {
+    font-size: 18px;
+    color: #e5e7eb;
 }
 
-.hero {
+li {
+    color: #E5E7EB;
+}
+
+.heroTitle {
     font-size: 48px;
+}
+
+button {
+    color: #F9FAF8;
+    background-color: #3882F6;
+    padding: 2px 24px;
+    font-weight: bold;
 }

@@ -15,22 +15,46 @@ body {
 .header {
     font-size: 24px;
     font-weight: bolder;
-    
+    align-items: center;
 }
+
 .leftLinks, .rightLinks {
     width: 400px;
 }
+
+.leftLinks {
+    justify-items: center;
+    flex-wrap: wrap;
+}
+
 ul, .heroText {
     font-size: 18px;
     color: #e5e7eb;
 }
 
+ul {
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+}
+
 li {
     color: #E5E7EB;
+    list-style: none;
+}
+
+.hero {
+    padding-bottom: 50px;
+    align-items: center;
 }
 
 .heroTitle {
     font-size: 48px;
+    padding-bottom: 0;
+}
+
+.heroText {
+    padding-top: 0;
 }
 
 button {
@@ -38,4 +62,14 @@ button {
     background-color: #3882F6;
     padding: 2px 24px;
     font-weight: bold;
+}
+
+.rightLinks {
+    
+    height: 200px;
+    width: 400px;
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

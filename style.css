@@ -9,22 +9,27 @@ body {
     display: flex;
     padding-left: 100px;
     padding-right: 100px;
-    justify-content: space-between;
 }
 
 .header {
     font-size: 24px;
     font-weight: bolder;
     align-items: center;
+    padding-bottom: 48px;
+    justify-content: space-between;
+    flex: 1 1 auto;
 }
 
 .leftLinks, .rightLinks {
-    width: 400px;
+    width: 500px;
+    height: 200px;
+    flex-shrink: 0;
 }
 
 .leftLinks {
     justify-items: center;
-    flex-wrap: wrap;
+    /** justify-content: flex-start; **/
+    
 }
 
 ul, .heroText {
@@ -36,27 +41,35 @@ ul {
     display: flex;
     flex-direction: row;
     gap: 18px;
+    justify-items: flex-end;
 }
 
 li {
-    color: #E5E7EB;
     list-style: none;
+}
+
+a {
+    color: #E5E7EB;
+    text-decoration: none;
 }
 
 .hero {
     padding-bottom: 50px;
     align-items: center;
+    justify-content: center;
+    gap: 48px;
 }
 
 .heroTitle {
     font-size: 48px;
-    padding-bottom: 0;
+    margin: 0;
 }
 
 .heroText {
     padding-top: 0;
+    margin: 0 0 10px 0;
 }
-
+ 
 button {
     color: #F9FAF8;
     background-color: #3882F6;
@@ -65,9 +78,7 @@ button {
 }
 
 .rightLinks {
-    
-    height: 200px;
-    width: 400px;
+    flex-shrink: 1 1 auto;
     background-color: grey;
     display: flex;
     align-items: center;

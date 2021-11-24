@@ -5,6 +5,8 @@ body {
 
 .container {
     display: flex;
+    flex-direction: column;
+    
 }
 
 .header, .hero {
@@ -94,14 +96,30 @@ button {
 
 .midTop {
     background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
+    height: 300px;    
+    /** justify-items: center; **/
     align-items: center;
 }
 
-.midBot {
+.infoHeader {
+    text-align: center;
+    padding: 12px;
+}
+.midPics {
+    display: flex;
     
+}
+
+.midPics .box {
+    height: 24px;
+    width: 24px;
+    background-color: grey;
+    text-align: center;
+    flex: 1 0 auto;
+}
+
+.midBot {
+    height: 300px;
     padding: 25px 250px;
     background-color: #E5E7EB;
 }

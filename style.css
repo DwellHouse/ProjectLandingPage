@@ -3,6 +3,10 @@ body {
     margin: 0;
 }
 
+.container {
+    display: flex;
+}
+
 .header, .hero {
     color: #F9FAF8;
     background-color: #1F2937;
@@ -12,12 +16,15 @@ body {
 }
 
 .header {
-    font-size: 24px;
-    font-weight: bolder;
     align-items: center;
     padding-bottom: 48px;
     justify-content: space-between;
     flex: 1 1 auto;
+}
+
+.headerName {
+    font-size: 24px;
+    font-weight: bolder;
 }
 
 .leftLinks, .rightLinks {
@@ -29,7 +36,6 @@ body {
 .leftLinks {
     justify-items: center;
     /** justify-content: flex-start; **/
-    
 }
 
 ul, .heroText {
@@ -48,7 +54,7 @@ li {
     list-style: none;
 }
 
-a {
+.headerLinks a {
     color: #E5E7EB;
     text-decoration: none;
 }
@@ -63,6 +69,7 @@ a {
 .heroTitle {
     font-size: 48px;
     margin: 0;
+    font-weight: bolder;
 }
 
 .heroText {
@@ -83,4 +90,28 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.midTop {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.midBot {
+    
+    padding: 25px 250px;
+    background-color: #E5E7EB;
+}
+
+.quote {
+    font-size: 36px;
+    font-style: italic;
+    word-wrap: wrap;
+}
+
+.smQuote {
+    text-align: right;
 }
